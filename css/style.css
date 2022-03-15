@@ -1,0 +1,115 @@
+*html{
+    box-sizing: border-box;       
+}
+body{
+    background-color: lavender;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+nav{
+    background-color: aqua;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: 100px;
+    height: 100px;
+}
+
+header nav ul li{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    text-decoration: none;
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+}
+ul{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    text-decoration: none;
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+}
+li{
+ display: flex;
+ flex-direction: row;
+ background-color: white;
+ color: blue;
+ text-decoration: none;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+height: 100px;
+}
+div #image{
+    display: flex;
+}
+#image{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-image: url(https://dansez-maintenant.com/wp-content/uploads/2020/10/Audition_IFunamboli_22Sept20-613-scaled.jpg);
+    background-color: #2ea3f2;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+section{
+    display: flex;
+    margin: 0px;
+    border: 0px;
+    background-color: aqua;
+}
+section a{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    background-color: aqua;
+    color: white;
+    border-radius: 50px;
+    margin: auto;
+    padding: 10px;
+    font-size: large;
+}
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+div#slider { 
+    width: 80%; max-width: 1000px; 
+    overflow: hidden;
+} 
+div#slider figure {
+    position:relative; 
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+    animation-name: slidy;
+    animation: 30s slidy infinite;
+}
+div#slider figure img { 
+    width: 20%; height: auto; float: left; 
+}
